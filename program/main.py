@@ -1,4 +1,3 @@
-
 from constants import ABORT_ALL_POSITIONS, FIND_COINTEGRATED, PLACE_TRADES, MANAGE_EXITS
 from func_connections import connect_dydx
 from func_private import abort_all_positions
@@ -13,7 +12,10 @@ from func_messaging import send_message
 if __name__ == "__main__":
 
   # Message on start
-  send_message("Bot launch successful")
+  #send_message("Bot launch successful")
+  success = send_message("MDC Anther awesome message")
+  print(success)
+  exit(1)
 
   # Connect to client
   try:
